@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <form>
+        <div class="form-row">
+            <div class="col-md-12">
+                <label for="inputFname">Name <span>*</span></label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <input type="text" class="form-control" id="inputFname">
+                <small id="LnameHelpBlock" class="form-text text-muted">
+                    First
+                   </small>
+            </div>
+            <div class="form-group col-md-4">
+                <input type="text" class="form-control" id="inputLname">
+                <small id="LnameHelpBlock" class="form-text text-muted">
+                   Last
+                  </small>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-8">
+                <label for="inputemail">Email <span>*</span></label>
+                <input type="email" class="form-control" id="inputemail">
+            </div>
+        </div>
+        <div class="form-group">
+            <h6 class="font-weight-bold">Your Experience <span>*</span></h6>
+            <i class="fa fa-star fa-2x checked" aria-hidden="true"></i>
+            <i class="fa fa-star fa-2x checked" aria-hidden="true"></i>
+            <i class="fa fa-star fa-2x checked" aria-hidden="true"></i>
+            <i class="fa fa-star fa-2x checked" aria-hidden="true"></i>
+            <i class="fa fa-star fa-2x checked" aria-hidden="true"></i>
+            <small id="ExpHelpBlock" class="form-text text-muted">
+                Overall, how would you rate you experience with us?
+               </small>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-12">
+            <h6 class="font-weight-bold">How satisfied are you with <span>*</span></h6>
+            <table class="table table-borderless table-striped table-sm">
+                <thead class="col">
+                  <tr>
+                    <th class="main col-2" scope="col"></th>
+                    <th class="main col-2" scope="col">Very Unsatisfied</th>
+                    <th class="main col-2" scope="col">Unsatisfied</th>
+                    <th class="main col-2" scope="col">Neutral</th>
+                    <th class="main col-2" scope="col">Satisfied</th>
+                    <th class="main col-2" scope="col">Very Satisfied</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Purchase     </th>
+                    <td><div class="form-check">
+                        <input class="form-check-input radio" type="radio" name="purRadio" id="purRadio1" value="option1" aria-label="...">
+                      </div></td>
+                    <td><div class="form-check">
+                        <input class="form-check-input radio" type="radio" name="purRadio" id="purRadio2" value="option1" aria-label="...">
+                      </div></td>
+                    <td><div class="form-check">
+                        <input class="form-check-input radio" type="radio" name="purRadio" id="purRadio3" value="option1" aria-label="...">
+                      </div></td>
+                    <td><div class="form-check">
+                        <input class="form-check-input radio" type="radio" name="purRadio" id="purRadio4" value="option1" aria-label="...">
+                      </div></td>
+                    <td><div class="form-check">
+                        <input class="form-check-input radio" type="radio" name="purRadio" id="purRadio5" value="option1" aria-label="...">
+                      </div></td>
+                  </tr>
+                  <tr>
+                    <td>Service     </th>
+                        <td><div class="form-check">
+                            <input class="form-check-input radio" type="radio" name="SerRadio" id="SerRadio1" value="option1" aria-label="...">
+                          </div></td>
+                        <td><div class="form-check">
+                            <input class="form-check-input radio" type="radio" name="SerRadio" id="SerRadio2" value="option1" aria-label="...">
+                          </div></td>
+                        <td><div class="form-check">
+                            <input class="form-check-input radio" type="radio" name="SerRadio" id="SerRadio3" value="option1" aria-label="...">
+                          </div></td>
+                        <td><div class="form-check">
+                            <input class="form-check-input radio" type="radio" name="SerRadio" id="SerRadio4" value="option1" aria-label="...">
+                          </div></td>
+                        <td><div class="form-check">
+                            <input class="form-check-input radio" type="radio" name="SerRadio" id="SerRadio5" value="option1" aria-label="...">
+                          </div></td>
+                  </tr>
+                  <tr>
+                    <td>Company Overall   </th>
+                        <td><div class="form-check">
+                            <input class="form-check-input radio" type="radio" name="ComOvRadio" id="ComOvRadio1" value="option1" aria-label="...">
+                          </div></td>
+                        <td><div class="form-check">
+                            <input class="form-check-input radio" type="radio" name="ComOvRadio" id="ComOvRadio2" value="option1" aria-label="...">
+                          </div></td>
+                        <td><div class="form-check">
+                            <input class="form-check-input radio" type="radio" name="ComOvRadio" id="ComOvRadio3" value="option1" aria-label="...">
+                          </div></td>
+                        <td><div class="form-check">
+                            <input class="form-check-input radio" type="radio" name="ComOvRadio" id="ComOvRadio4" value="option1" aria-label="...">
+                          </div></td>
+                        <td><div class="form-check">
+                            <input class="form-check-input radio" type="radio" name="ComOvRadio" id="ComOvRadio5" value="option1" aria-label="...">
+                          </div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-12">
+          <h6 class="font-weight-bold">How likely are you to <span>*</span></h6>
+          <table class="table table-borderless table-striped table-sm">
+              <thead>
+                <tr>
+                  <th class="main col-2" scope="col"></th>
+                  <th class="main col-2" scope="col">Very Unlikely</th>
+                  <th class="main col-2" scope="col">Unlikely</th>
+                  <th class="main col-2" scope="col">Neutral</th>
+                  <th class="main col-2" scope="col">Likely</th>
+                  <th class="main col-2" scope="col">Very Likely</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Buy from us again</th>
+                  <td><div class="form-check">
+                      <input class="form-check-input radio" type="radio" name="BuyAgainRadio" id="BuyAgainRadio1" value="option1" aria-label="...">
+                    </div></td>
+                  <td><div class="form-check">
+                      <input class="form-check-input radio" type="radio" name="BuyAgainRadio" id="BuyAgainRadio2" value="option1" aria-label="...">
+                    </div></td>
+                  <td><div class="form-check">
+                      <input class="form-check-input radio" type="radio" name="BuyAgainRadio" id="BuyAgainRadio3" value="option1" aria-label="...">
+                    </div></td>
+                  <td><div class="form-check">
+                      <input class="form-check-input radio" type="radio" name="BuyAgainRadio" id="BuyAgainRadio4" value="option1" aria-label="...">
+                    </div></td>
+                  <td><div class="form-check">
+                      <input class="form-check-input radio" type="radio" name="BuyAgainRadio" id="BuyAgainRadio5" value="option1" aria-label="...">
+                    </div></td>
+                </tr>
+                <tr>
+                  <td>Recommend our product to others</th>
+                      <td><div class="form-check">
+                          <input class="form-check-input radio" type="radio" name="RproRadio" id="RproRadio1" value="option1" aria-label="...">
+                        </div></td>
+                      <td><div class="form-check">
+                          <input class="form-check-input radio" type="radio" name="RproRadio" id="RproRadio2" value="option1" aria-label="...">
+                        </div></td>
+                      <td><div class="form-check">
+                          <input class="form-check-input radio" type="radio" name="RproRadio" id="RproRadio3" value="option1" aria-label="...">
+                        </div></td>
+                      <td><div class="form-check">
+                          <input class="form-check-input radio" type="radio" name="RproRadio" id="RproRadio4" value="option1" aria-label="...">
+                        </div></td>
+                      <td><div class="form-check">
+                          <input class="form-check-input radio" type="radio" name="RproRadio" id="RproRadio5" value="option1" aria-label="...">
+                        </div></td>
+                </tr>
+                <tr>
+                  <td>Recommend our company to others</th>
+                      <td><div class="form-check">
+                          <input class="form-check-input radio" type="radio" name="ComOthRadio" id="ComOthRadio1" value="option1" aria-label="...">
+                        </div></td>
+                      <td><div class="form-check">
+                          <input class="form-check-input radio" type="radio" name="ComOthRadio" id="ComOthRadio2" value="option1" aria-label="...">
+                        </div></td>
+                      <td><div class="form-check">
+                          <input class="form-check-input radio" type="radio" name="ComOthRadio" id="ComOthRadio3" value="option1" aria-label="...">
+                        </div></td>
+                      <td><div class="form-check">
+                          <input class="form-check-input radio" type="radio" name="ComOthRadio" id="ComOthRadio4" value="option1" aria-label="...">
+                        </div></td>
+                      <td><div class="form-check">
+                          <input class="form-check-input radio" type="radio" name="ComOthRadio" id="ComOthRadio5" value="option1" aria-label="...">
+                        </div></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+      <div class="form-group">
+        <label for="inpaddlcomment">Additional comments or suggestions</label>
+        <textarea class="form-control" id="inpaddlcomment" rows="4"></textarea>
+      </div>
+        <button type="submit" class="btn btn-light btn-lg">Submit</button>
+    </form>
+</body>
+
+</html>

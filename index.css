@@ -1,0 +1,37 @@
+form{
+    margin:30px;
+}
+span{
+    color:red;
+    font-weight: bold;
+}
+label{
+    font-weight: bold;
+ }
+ .checked {
+    color: orange;
+  }
+  i {
+    cursor: pointer;
+    transition: color 0.25s;
+  }
+  .main{
+    font-weight: normal !important;
+    text-align: center;
+  }
+  td{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .radio{
+    transform: scale(1.5);
+  }
+  .form-check{
+    text-align: center;
+    padding-bottom: 20px;
+    vertical-align: middle;
+    padding-left: 0rem !important;
+  }
+  .table td{
+    vertical-align: middle !important;
+  }
